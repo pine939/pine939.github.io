@@ -1,0 +1,26 @@
+# Jekyll
+_site
+*-cache/
+.jekyll-metadata
+.jekyll
+.sass-cache
+_asset_bundler_cache
+
+# Mac
+.DS_Store
+
+# Ruby
+.bundle
+.byebug_history
+.ruby-gemset
+.ruby-version
+*.gem
+Gemfile
+Gemfile.lock
+
+node_modules
+package.json
+
+# Vim
+*~
+*.sw
