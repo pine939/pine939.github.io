@@ -16,3 +16,17 @@ main:
     url: /categories/
   - title: "Tags"
     url: /tags/
+
+docs:
+  - title: "LANGUAGE"
+    children:
+      - title: "C++"
+        url: /categories/cpp/
+  - title: "CODING TEST"
+    children:
+      - title: "Programmers"
+        url: /categories/programmers/
+      - title: "Backjun"
+        url: /categories/backjun/
+      - title: "Algospot"
+        url: /categories/algospot/
