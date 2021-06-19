@@ -32,7 +32,32 @@ sidebar:
 ## Project
 ---
 
-* Continue...
+<table>
+    <tr>
+        <th> Title </th>
+        <th> Company </th>
+        <th> Skills </th>
+        <th> Time </th>
+    </tr>
+    {% for portfolio in site.portfolio reversed %}
+
+    {% if portfolio.categories contains "project" and portfolio.categories.size == 1 %}
+    <tr>
+        <td>
+            {% assign content = portfolio.content | strip_newlines %}
+            {% if content != ""  or portfolio.redirect_to %}
+                <a href="{{ portfolio.url }}">{{ portfolio.title }}</a>
+            {% else %}
+                {{ portfolio.title }}
+            {% endif %}
+        </td>
+        <td>{{ portfolio.company }}</td>
+        <td>{{ portfolio.skills | join: ", " }}</td>
+        <td>{{ portfolio.time }}</td>
+    </tr>
+    {% endif %}
+    {% endfor %}
+</table>
 
 ## Etc
 ---
