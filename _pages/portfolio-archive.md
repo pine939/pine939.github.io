@@ -59,6 +59,11 @@ sidebar:
     {% endfor %}
 </table>
 
+## Education
+---
+
+* 명지대학교 학사 졸업 (2013.03 ~ 2018.02)
+
 ## Etc
 ---
 
