@@ -1,10 +1,10 @@
 ---
 layout: single
 time: "2019.09 ~ Current"
-title: "ESM Agent 개발"
+title: "ESM Agent"
 skills: [C, Python, Shell]
 company: "Wins"
-categories: [Project]
+categories: [project]
 author_profile: true
 sidebar:
   nav: "docs"

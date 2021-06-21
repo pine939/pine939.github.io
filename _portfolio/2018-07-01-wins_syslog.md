@@ -1,10 +1,10 @@
 ---
 layout: single
 time: "2018.07 ~ 2018.08"
-title: "syslog 연동 프로그램 개발"
+title: "syslog 연동 프로그램"
 skills: [Python]
 company: "Wins"
-categories: [Project]
+categories: [project]
 author_profile: true
 sidebar:
   nav: "docs"

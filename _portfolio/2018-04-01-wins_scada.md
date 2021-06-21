@@ -1,10 +1,10 @@
 ---
 layout: single
 time: "2018.04 ~ 2018.10"
-title: "SCADA 네트워크 이상징후 감시 시스템 개발"
+title: "SCADA 네트워크 이상징후 감시 시스템"
 skills: [C, Python]
 company: "Wins"
-categories: [Project]
+categories: [project]
 author_profile: true
 sidebar:
   nav: "docs"

@@ -1,19 +1,25 @@
 ---
 layout: single
 time: "2017.07 ~ 2017.08"
-title: "scikit-learn 기반 텍스트 분류 프로그램 개발"
+title: "scikit-learn 기반 텍스트 분류 프로그램"
 skills: [Python]
 company: "Thinkware"
-categories: [Project]
+categories: [project]
 author_profile: true
 sidebar:
   nav: "docs"
 ---
 
+## 개요 
+---
+
+* Thinkware Intern Project 
+
 ## 기술
 ---
 
 * Python
+* Scikit-Learn Library
 
 ## 역할
 
