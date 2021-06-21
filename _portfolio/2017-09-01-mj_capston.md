@@ -36,3 +36,5 @@ sidebar:
   * SSID, Password 설정 및 변경
   * Mac주소 기반 특정 사용자 차단
   * 공유기 이용자 수 제한
+* 구성도
+<img width="579" alt="project_image" src="https://user-images.githubusercontent.com/5865308/122755559-1c9cca00-d2d0-11eb-8ae5-33472f9dc63c.png">
