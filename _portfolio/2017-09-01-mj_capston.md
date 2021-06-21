@@ -11,13 +11,11 @@ sidebar:
 ---
 
 ## 개요
----
 
 * 캡스톤 디자인 경진대회 출품작
 
 
 ## 기술
----
 
 * Language
   * Python
@@ -29,7 +27,6 @@ sidebar:
   * Naver TTS API
 
 ## 역할
----
 
 * 음성인식 API를 사용하여 공유기의 보안 설정을 음성으로 처리하는 Demon 설계 및 개발
   * Admin/Guest 권한 별 Login

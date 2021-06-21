@@ -11,12 +11,10 @@ sidebar:
 ---
 
 ## 개요
----
 
 * 정보보호 해커톤 출전작
 
 ## 기술
----
 
 * Language
   * C, Python, PHP, HTML, CSS, JQuery
@@ -29,7 +27,6 @@ sidebar:
   * Visualization: ZingChart, Leaflet
 
 ## 역할
----
 
 * DNS Packet에서 IP와 요청 도메인 정보 추출 
 * OpenDNS API 결과값을 분석하여 악성 사이트를 판별하는 로직 설계 및 구현

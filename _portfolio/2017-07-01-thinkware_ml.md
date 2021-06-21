@@ -11,12 +11,10 @@ sidebar:
 ---
 
 ## 개요 
----
 
 * Thinkware Intern Project 
 
 ## 기술
----
 
 * Python
 * Scikit-Learn Library
