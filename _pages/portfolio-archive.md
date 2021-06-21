@@ -31,15 +31,18 @@ sidebar:
 
 <table>
     <tr>
-        <th> Title </th>
+        <th> Time </th>
         <th> Company </th>
         <th> Skills </th>
-        <th> Time </th>
+        <th> Title </th>
     </tr>
     {% for portfolio in site.portfolio reversed %}
 
     {% if portfolio.categories contains "project" and portfolio.categories.size == 1 %}
     <tr>
+        <td>{{ portfolio.time }}</td>
+        <td>{{ portfolio.company }}</td>
+        <td>{{ portfolio.skills | join: ", " }}</td>
         <td>
             {% assign content = portfolio.content | strip_newlines %}
             {% if content != ""  or portfolio.redirect_to %}
@@ -48,9 +51,6 @@ sidebar:
                 {{ portfolio.title }}
             {% endif %}
         </td>
-        <td>{{ portfolio.company }}</td>
-        <td>{{ portfolio.skills | join: ", " }}</td>
-        <td>{{ portfolio.time }}</td>
     </tr>
     {% endif %}
     {% endfor %}
