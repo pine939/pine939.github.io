@@ -22,9 +22,3 @@ last_modified_at: 2021-06-23
 * 1.1 Introduction
 * 1.2 Classes
 * 1.3 STL
-
-## 내용
-
-* 6/24 추가 예정...
-
-## 정리

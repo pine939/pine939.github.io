@@ -1,7 +1,7 @@
 ---
 layout: single
 time: "2016.10 ~ 2016.11"
-title: "OpenDNS API를 사용하여 악성 사이트 Defensor 프로그램"
+title: "OpenDNS API를 사용한 악성 사이트 방어 프로그램"
 skills: [C, Python, PHP, HTML, CSS, JQuery]
 company: "-"
 categories: [project]
