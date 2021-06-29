@@ -30,3 +30,9 @@ docs:
         url: /categories/baekjun
       - title: "Algospot"
         url: /categories/algospot
+  - title: "READ PAPER"
+    children:
+      - title: "Domestic"
+        url: /categories/domestic
+      - title: "International"
+        url: /categories/international
