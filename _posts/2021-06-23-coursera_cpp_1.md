@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2021-06-23
-last_modified_at: 2021-06-28
+last_modified_at: 2021-07-02
 ---
 
 ## Summary
@@ -53,3 +53,13 @@ last_modified_at: 2021-06-28
 
 * we have encapsulated the Cube class into the uiuc namespace.
 * add curly brace, and we're going to do that inside of both header and the cpp file.
+
+### Quiz
+
+* A class can consist of multiple member data variables of different types, but each type must be specified when the class is defined.
+* Even if the functions are declared in the class and implemented in a separate .cpp file, they are still part of the class. 
+* Namespaces allow different libraries to use the same label for a class or variable because they can each define a unique namespace to differentiate them when they are used together in a program.
+
+### Challenge
+
+* skip
