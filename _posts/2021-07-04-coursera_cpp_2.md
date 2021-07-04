@@ -18,6 +18,8 @@ last_modified_at: 2021-07-04
 
 ## Summary
 
+* lecture 
+  * https://www.coursera.org/learn/cs-fundamentals-1/home/week/2
 * Pointers and dereferencing
 * Local (stack) memory
 * Allocated (heap) memory
