@@ -1,6 +1,6 @@
 ---
 title: "Object-Oriented Data Structures in C++ (2)"
-excerpt: "coursera의 Object-Oriented Data Structures in C++ 2주차 강의 정리"
+excerpt: "Pointer, Memory"
 
 categories:
   - 'cpp'

@@ -1,6 +1,6 @@
 ---
 title: "Object-Oriented Data Structures in C++ (1)"
-excerpt: "coursera의 Object-Oriented Data Structures in C++ 1주차 강의 정리"
+excerpt: "Introduction, Class, STD"
 
 categories:
   - 'cpp'
