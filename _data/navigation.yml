@@ -22,21 +22,15 @@ docs:
     children:
       - title: "C++"
         url: /categories/cpp
-  - title: "CODING TEST"
-    children:
-      - title: "Programmers"
-        url: /categories/programmers
-      - title: "Backjun"
-        url: /categories/baekjun
-      - title: "Algospot"
-        url: /categories/algospot
-  - title: "READ PAPER"
-    children:
-      - title: "Domestic"
-        url: /categories/domestic
-      - title: "International"
-        url: /categories/international
-  - title: "INFRA"
+        #- title: "CODING TEST"
+        #children:
+        #- title: "Programmers"
+        #url: /categories/programmers
+        #- title: "Backjun"
+        #url: /categories/baekjun
+        #- title: "Algospot"
+        #url: /categories/algospot
+  - title: "BOOK LEARNING"
     children:
       - title: "Docker"
         url: /categories/docker
@@ -44,3 +38,9 @@ docs:
     children:
       - title: "Today I Learn"
         url: /categories/til
+  - title: "READ PAPER"
+    children:
+      - title: "Domestic"
+        url: /categories/domestic
+      - title: "International"
+        url: /categories/international
