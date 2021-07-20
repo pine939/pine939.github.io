@@ -14,7 +14,7 @@ toc_sticky: true
 sidebar:
   nav: docs
 date: 2021-07-04
-last_modified_at: 2021-07-19
+last_modified_at: 2021-07-20
 ---
 
 ## Summary
@@ -30,6 +30,31 @@ last_modified_at: 2021-07-19
 
 ## Lectures
 ### 2.1 Stack Memory and Pointers
+
+* Variable
+  * Every c++ variable has four things
+  ```
+  name
+  type
+  value
+  location in memory (memory address)
+  ```
+* Stack Memory
+  * By default, every variable in C++ is located in *Stack Memory*
+  * The stack memory's lifecycle is tied to the function. (*Stack Frame exists only so long as the function is running.*)
+  * The stack memory grows down toward zero.
+  * The memory address in your computer, they are going to be different because the layout of memory is might different as randomized.
+* Pointer
+  * It's a variable that stores the memory address of data.
+  * given a pointer value, a level of indirection can be removed with dereference operator '*'.
+  ```cpp
+  int num = 5;
+  int *p = &num;
+  int value_in_num = *p;
+  *p = 40
+  ```
+  *  Be sure to initialize variables and do not access addresses to invalid memory.
+
 ### 2.2 Heap Memory
 ### 2.3 Heap Memory Puzzle
 
