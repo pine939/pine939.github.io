@@ -24,9 +24,9 @@ last_modified_at: 2021-07-19
   * https://www.coursera.org/learn/cs-fundamentals-1/home/week/2
   * (if you want to take this class, may be you need to sign in)
 * main topic
-* Pointers and dereferencing
-* Local (stack) memory
-* Allocated (heap) memory
+  * Pointers and dereferencing
+  * Local (stack) memory
+  * Allocated (heap) memory
 
 ## Lectures
 ### 2.1 Stack Memory and Pointers
@@ -38,7 +38,6 @@ last_modified_at: 2021-07-19
 ## Readings
 
 * Making Comments in C++ Code
-  * too easy but very important.
 * Headers and Source Files
   * .h 
   ```c++
@@ -58,4 +57,9 @@ last_modified_at: 2021-07-19
     * Include directives insert the headers.
     * *Compiler* generates object files.
     * *Linker* combines file into an executable.
-    
+* Compiling and Running a C++ Program    
+* Useful Bash Terminal Commands
+* C++ Syntax Notes : If-Else, Type Casting 
+  * [refer 1](http://www.cplusplus.com/doc/tutorial/typecasting/)
+  * [refer 2](https://en.cppreference.com/w/cpp/language/implicit_conversion)
+* C++ Syntax Notes : Block Scope, loops
