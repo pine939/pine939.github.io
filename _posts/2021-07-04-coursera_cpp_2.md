@@ -56,9 +56,70 @@ last_modified_at: 2021-07-20
   *  Be sure to initialize variables and do not access addresses to invalid memory.
 
 ### 2.2 Heap Memory
-### 2.3 Heap Memory Puzzle
 
-* 완강! 간단한 내용이지만 7/21 정리 예정
+* heap memory
+  * longer than function life cycle.
+  * return pointer (not instance)
+  * The only way to create heap memory in C++ is with the 'new' operator.
+* C++ Operator 
+  * new
+    * allocate
+    * initialize
+    * return pointer (about start of data structure)
+  * delete 
+    * The only way to reclaim memory from system is with the 'delete' operator.
+    * If we don't take care of this memory, It has extremely long lifecycle in the system.
+* Code
+```
+int *numPtr = new int;
+*numPtr = 29;
+```
+  * *numPtr : dereference value.
+  * numPtr : heap memory address.
+  * &numPtr : stack memory address.
+  * store in the stack memory. (numPtr)
+  * store in the heap memory. (new int)
+  * "numPtr(stack)" points to "new int(heap)".
+  * If you not set the heap memory value, it set garbage value (random).
+  * The memory addresses(stack, heap) are not changed.
+  * Only change the dereference value.
+* Code2
+```
+int *p = new int;
+Square *s = new Square;
+*p = 29;
+(*s).getlength(2);
+delete p;
+delete s;
+```
+  * nullptr 
+    * The C++ keyword "nullptr" points to the memory address 0x0.
+    * Address 0x0 causes an "segmentation fault" when accessed. 
+    * You never "delete" 0x0.
+    * You can use this way.
+    ```
+    delete c;
+    c = nullptr;
+    delete p;
+    p = nullptr;
+    ```
+  * clumsy syntax
+  ```
+  (*s).setlength(2);
+  ```
+  * It can use this way.
+  ```
+  s->setlength(2);
+  ```
+* Code3
+```
+Square *s = new Square;
+Square *s2 = s;
+delete s2;
+delete s1; // double free!!
+```
+
+### 2.3 Heap Memory Puzzle
 
 ## Readings
 
