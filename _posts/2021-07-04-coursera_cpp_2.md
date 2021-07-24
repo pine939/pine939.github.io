@@ -14,7 +14,7 @@ toc_sticky: true
 sidebar:
   nav: docs
 date: 2021-07-04
-last_modified_at: 2021-07-20
+last_modified_at: 2021-07-25
 ---
 
 ## Summary
@@ -70,7 +70,7 @@ last_modified_at: 2021-07-20
     * The only way to reclaim memory from system is with the 'delete' operator.
     * If we don't take care of this memory, It has extremely long lifecycle in the system.
 * Code
-```
+```cpp
 int *numPtr = new int;
 *numPtr = 29;
 ```
@@ -84,7 +84,7 @@ int *numPtr = new int;
   * The memory addresses(stack, heap) are not changed.
   * Only change the dereference value.
 * Code2
-```
+```cpp
 int *p = new int;
 Square *s = new Square;
 *p = 29;
@@ -97,22 +97,22 @@ delete s;
     * Address 0x0 causes an "segmentation fault" when accessed. 
     * You never "delete" 0x0.
     * You can use this way.
-    ```
+    ```cpp
     delete c;
     c = nullptr;
     delete p;
     p = nullptr;
     ```
   * clumsy syntax
-  ```
+  ```cpp
   (*s).setlength(2);
   ```
   * It can use this way.
-  ```
+  ```cpp
   s->setlength(2);
   ```
 * Code3
-```
+```cpp
 Square *s = new Square;
 Square *s2 = s;
 delete s2;
@@ -120,6 +120,21 @@ delete s1; // double free!!
 ```
 
 ### 2.3 Heap Memory Puzzle
+
+* Code
+```cpp
+int main() {
+  int *x;
+  int size = 3;
+  x = new int[size];  // !!
+  for (int i = 0; i < size; i++) {
+    x[i] = i + 10;  // save the contents of heap memory.
+  }
+  delete[] x;  // !! 
+}
+```
+  * If you have an *array of memory(ex. new int[size];)* instead of just a single value of heap memory, 
+  you should *delete the array(ex. delete[] x;)*
 
 ## Readings
 
