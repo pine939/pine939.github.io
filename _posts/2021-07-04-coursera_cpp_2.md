@@ -164,3 +164,25 @@ int main() {
   * [refer 1](http://www.cplusplus.com/doc/tutorial/typecasting/)
   * [refer 2](https://en.cppreference.com/w/cpp/language/implicit_conversion)
 * C++ Syntax Notes : Block Scope, loops
+
+## Quiz
+
+* what does it points to?
+```cpp
+int *i;
+*i = 0;  // segmentation fault
+```
+  * This declaration create a pointer but does not define what the memory location it points to.
+  * so, you should write the code following.
+  ```cpp
+  int *i = new int;
+  *i = 0;
+  ```
+* what deos mean about the last line?
+```cpp
+int *i = new int;
+*i = 0;
+int &j = *i;
+j++;
+```
+  * Increments the value pointed to by variable i by one.
