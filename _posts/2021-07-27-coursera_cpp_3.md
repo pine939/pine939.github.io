@@ -131,6 +131,18 @@ last_modified_at: 2021-07-27
         * we're just doing copying. (assignment)
         * So, there's no copy constructor.
 
+### 3.3 Copy Assignment Operator
+
+* Custom Assignment Operator
+```cpp
+Cube & operator=(const Cube &obj)
+```
+  * It is a public function of the Class.
+  * It has the name *"operator="*
+  * It has a return value of reference of class type.
+  * It has exactly one argument
+
+
 ## Reading
 
 ## Graded Activities
