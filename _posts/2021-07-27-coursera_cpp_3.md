@@ -142,6 +142,26 @@ Cube & operator=(const Cube &obj)
   * It has a return value of reference of class type.
   * It has exactly one argument
 
+### 3.4 Variable Storage
+
+* Every variables are stored ...
+```
+directly in memory,
+accessed via a pointer,
+or accessed by a reference.
+```
+* Direct Storage
+  * The type, size of a variable has no modifiers.
+* Storage by Pointer
+  * The type of a variable is modified with an asterisk (*).
+  * A pointer takes a "memory address width" of memory. (by your system)
+  * The pointer "points" to the allocated space of the object. 
+* Storage by Reference
+  * A reference is a special type of variable which **aliases** existing memory by name.
+  * A reference **does not store memory itself(It takes zero bytes of memory to create a reference variable)**, it is only an alias to another variable.
+  ```
+  * It is denoted by the type with an ampersand(&).
+
 
 ## Reading
 
