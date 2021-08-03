@@ -17,7 +17,7 @@ date: 2021-07-27
 last_modified_at: 2021-07-27
 ---
 
-### Summary
+## Summary
 
 * study lifecycle cpp object by taking coursera class.
 * lecture
@@ -28,8 +28,8 @@ last_modified_at: 2021-07-27
   * Methods and Operators
   * Access through pointers and references
 
-### Lecture
-#### 3.1 Class Constructors
+## Lecture
+### 3.1 Class Constructors
 
 * Automatic Default Constructor
   * Every class we've seen so far has a constructor.
@@ -159,9 +159,32 @@ or accessed by a reference.
 * Storage by Reference
   * A reference is a special type of variable which **aliases** existing memory by name.
   * A reference **does not store memory itself(It takes zero bytes of memory to create a reference variable)**, it is only an alias to another variable.
-  ```
   * It is denoted by the type with an ampersand(&).
 
+### 3.5 Class Destructor
+
+* very last call in the class's lifecycle when an instance of class is cleaned up.
+
+#### Automatic Default Destructor 
+
+* It is added to your class if no other destructor is defined.
+* It call the default destructor of all member objects.
+* It *never* be called directly. Instead, it is automatically called when the object's memory is being reclaimed by the system.
+  * if the object is on the **stack**, when the function returns(end).
+  * if the object is on the **heap**, when *delete* is used.
+
+#### Custom Destructor 
+
+* A custom destructor is a member function.
+* It has the name of the class it self. and is preceded by a tilde (~).
+* All destructor has no argument and no return type.
+```cpp
+Custom_Destructor::~Custom_Destructor();
+```
+* It is essential when an object allocates an external resource that must be closed or freed when the object is destroyed.
+  * Heap memory
+  * Open files
+  * Shared Memory
 
 ## Reading
 
