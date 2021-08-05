@@ -188,4 +188,98 @@ Custom_Destructor::~Custom_Destructor();
 
 ## Reading
 
+### C++ Syntax Notes: The Modern Ranged-Based "for" loop
+
+* you can use "for loop" in this way.
+```cpp
+for {temporaray variable declaration: container} {
+  // loop body
+}
+```
+* there are three ways about usage of "for loop"
+  * use temporary value by *copy*
+  * use temporary value of *reference* type
+  * use value of *const reference* type
+* use temporary value by copy
+  * following for loop makes a temporary copy each vector item by value.
+  * Since variable "i" is just a temporary copy, any changes to "i" do not modify the actual container.
+  ```cpp
+  #include<iostream>
+  #include<vector>
+  using namespace std;
+  int main() {
+    vector<int> v;
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(3);
+
+    for (int i : v) {
+      i = 100;
+    }
+    for (int i : v) {
+      cout << "member : " << i << endl;
+    }
+  }
+  /*
+  member : 1
+  member : 2
+  member : 3
+  */
+  ```
+* use temporary value of reference type
+  * If you make the temporary variable of reference type, you can modify the actual container item.
+  ```cpp
+  #include<iostream>
+  #include<vector>
+  using namespace std;
+  int main() {
+    vector<int> v;
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(3);
+
+    for (int &i:v) {
+      i = 100;
+    }
+    for (int i:v) {
+      cout << "member: "<< i << endl;
+    }
+  }
+  /*
+  member: 100
+  member: 100
+  member: 100
+  */
+  ```
+* use value of const reference type
+  * This verson uses a reference, so it doesn't make any copies. 
+  * However, following is *read-only* since the *const* mark.
+  ```cpp
+  #include<iostream>
+  #include<vector>
+  using namespace std;
+  int main() {
+    vector<int> v;
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(3);
+
+    for (const int &i:v) {
+      i = 100;
+    }
+    for (int i:v) {
+      cout << "member: "<< i << endl;
+    }
+  }
+  /*
+  test.cpp:10:5: error: cannot assign to variable 'i' with const-qualified type
+      'const int &'
+                i = 100;
+                ~ ^
+  */
+  ```
+
+### Unsigned Integer Types
+
+
 ## Graded Activities
