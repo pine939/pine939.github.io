@@ -190,6 +190,26 @@ Custom_Destructor::~Custom_Destructor();
 
 ### C++ Syntax Notes: Uninitialized Pointer, Segfault, Undefined Behavior
 
+* Segfault
+  * If you dereference an memory access that you shouldn't, this is often called 'segmentation fault' or 'segfault'
+  ```cpp
+  #include<iostream>
+  using namespace std;
+  char *c = nullptr
+  cout << c << endl;
+  ```
+* Undefined Behavior
+  * https://www.secmem.org/blog/2020/01/17/c-c++-and-ub/
+* Reset 'nullptr' after 'delete' memory
+```cpp
+int *i = new int; // allocate an integer memory on the heap.
+// now i holds some memory address to a valid integer.
+*i = 10; // do some work with integer.
+delete i;
+// this destroys the integer on the heap and frees the memory.
+// but i still holds the memory address.
+i = nullptr; // so, set i to nullptr for safety.
+```
 
 ### C++ Syntax Notes: The Modern Ranged-Based "for" loop
 
