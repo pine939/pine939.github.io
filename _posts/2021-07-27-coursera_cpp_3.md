@@ -188,6 +188,9 @@ Custom_Destructor::~Custom_Destructor();
 
 ## Reading
 
+### C++ Syntax Notes: Uninitialized Pointer, Segfault, Undefined Behavior
+
+
 ### C++ Syntax Notes: The Modern Ranged-Based "for" loop
 
 * you can use "for loop" in this way.
