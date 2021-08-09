@@ -28,3 +28,16 @@ last_modified_at: 2021-08-08
 * oop design
 * template
 * class hierarchies and inheritance
+
+## Lecture
+
+### 4.1 Template Types
+
+* **Template Type** is a special type in c++ that can take on other different types when it is initialized.
+* Template Type
+  * we can initialize the template using "< >"
+  ```cpp
+  std::vector<char> c;
+  std::vector<int> i;
+  std::vector<uiuc::Cube> cube;
+  ```
