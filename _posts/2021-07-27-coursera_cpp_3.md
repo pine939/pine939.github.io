@@ -320,24 +320,20 @@ class Test() {
     Test(const Test &);
     ~Test();
 };
-
 Test::Test(int a, int b) {
   // ta points a, tb points b. Pointer points just each local variable. 
   ta = new int(a);
   tb = new int(b);
 }
-
 Test::Test(const Test &tc) {
   // tc is alias.
   ta = new int(*(tc.ta));
   tb = new int(*(tc.tb));
 }
-
 Test::~Test() {
   delete ta;
   delete tb;
 }
-
 int main() {
   Test t(1,2); // Test(int, int) is invoked! 
   Test t2(t);  // Test(const Test&) is invoked! deep copy. 
