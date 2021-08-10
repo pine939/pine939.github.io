@@ -306,3 +306,43 @@ for {temporaray variable declaration: container} {
 
 
 ## Graded Activities
+
+### Quiz
+### Challenge
+
+* implement single, copy constructor with shallow copy and deep copy.
+* implement destructor.
+```cpp
+class Test() {
+  public:
+    int *ta, *tb;
+    Test(int, int);
+    Test(const Test &);
+    ~Test();
+};
+
+Test::Test(int a, int b) {
+  // ta points a, tb points b. Pointer points just each local variable. 
+  ta = new int(a);
+  tb = new int(b);
+}
+
+Test::Test(const Test &tc) {
+  // tc is alias.
+  ta = new int(*(tc.ta));
+  tb = new int(*(tc.tb));
+}
+
+Test::~Test() {
+  delete ta;
+  delete tb;
+}
+
+int main() {
+  Test t(1,2); // Test(int, int) is invoked! 
+  Test t2(t);  // Test(const Test&) is invoked! deep copy. 
+  Test *t3 = new Test(3,4);  // Test(int, int) is invoked! 
+  delete t3; // ~Test() is invoked!
+  return 0;
+}
+```
