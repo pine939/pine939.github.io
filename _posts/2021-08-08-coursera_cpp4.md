@@ -31,7 +31,7 @@ last_modified_at: 2021-08-08
 
 ## Lecture
 
-### 4.1 Template Types
+### Template Types
 
 * **Template Type** is a special type in c++ that can take on other different types when it is initialized.
 * Template Type
@@ -41,3 +41,9 @@ last_modified_at: 2021-08-08
   std::vector<int> i;
   std::vector<uiuc::Cube> cube;
   ```
+
+### Templates and Classes
+
+### Inheritance
+
+## Graded Activities
