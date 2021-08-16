@@ -62,5 +62,11 @@ last_modified_at: 2021-08-15
 
 ### Inheritance
 
+* generic to specialized 
+  * Interitance means "**base class** -> **dereived class**"
+* Initialization
+  * the derived class **must initialize(construct)** the basic class.
+    * using default constructor.
+    * using custom constructor. 
 
 ## Graded Activities
