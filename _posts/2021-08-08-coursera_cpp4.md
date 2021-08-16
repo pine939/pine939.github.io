@@ -42,8 +42,25 @@ last_modified_at: 2021-08-15
   std::vector<uiuc::Cube> cube;
   ```
 
+### Tower of Hanoi 
+
+* skip
+
 ### Templates and Classes
 
+* Template Functions 
+  * template variable is defined by declaring it before the beginning of a class or function.
+  ```cpp
+  template <typename T>
+  int max_test(T a, T b) {  // the type of a, b can be anything! 
+    if (a > b) {
+      return a;
+    }
+    return b;
+  }
+  ```
+
 ### Inheritance
+
 
 ## Graded Activities
