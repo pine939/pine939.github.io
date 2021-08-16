@@ -1,5 +1,5 @@
 ---
-title: "Object-Oriented Data Structures in C++ (4)"
+title: "Object-Oriented Data Structures in C++ (4) - fin"
 excerpt: "Template"
 
 categories:
@@ -68,5 +68,3 @@ last_modified_at: 2021-08-15
   * the derived class **must initialize(construct)** the basic class.
     * using default constructor.
     * using custom constructor. 
-
-## Graded Activities
