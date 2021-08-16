@@ -62,5 +62,9 @@ sidebar:
 
 ## Etc
 
-* 정보처리기사
+* Google Developers Machine Learning Bootcamp
+  * [program url](https://events.withgoogle.com/google-developers-mlb-kr-2021/)
+* Object-Oriented Data Structures in C++
+  * [certificate](https://coursera.org/verify/74Z7YA3QY8HE)
 * 리눅스 마스터 2급
+* 정보처리기사

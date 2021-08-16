@@ -30,12 +30,8 @@ docs:
         #url: /categories/baekjun
         #- title: "Algospot"
         #url: /categories/algospot
-  #- title: "BOOK LEARNING"
-  #  children:
-  #    - title: "Docker"
-  #      url: /categories/docker
   - title: "DATA SCIENCE"
-    chilren:
+    children:
       - title: "Machine Learning"
         url: /categories/ml
       - title: "Artificial Intelligence"
