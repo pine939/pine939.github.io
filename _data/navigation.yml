@@ -18,7 +18,7 @@ main:
     url: /tags/
 
 docs:
-  - title: "LANGUAGE"
+  - title: "PROGRAMMING"
     children:
       - title: "C++"
         url: /categories/cpp
@@ -30,6 +30,8 @@ docs:
         #url: /categories/baekjun
         #- title: "Algospot"
         #url: /categories/algospot
+      - title: "Utility"
+        url: /categories/utility
   - title: "DATA SCIENCE"
     children:
       - title: "Machine Learning"
