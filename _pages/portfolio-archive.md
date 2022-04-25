@@ -24,7 +24,8 @@ sidebar:
 
 | Time | Company | Job Position | Description |
 | --- | ----- | -----| ----- |
-| 2018.01 ~ Current | <a href="http://wins21.com/main/main.html">Wins</a> | Software Deveoper | 정보보호 소프트웨어(IPS, ESM) 연구개발 업무|
+| 2022.05 ~ || Software Developer | 연구개발 업무|
+| 2018.01 ~ 2022.04 | <a href="http://wins21.com/main/main.html">Wins</a> | Software Deveoper | 정보보호 소프트웨어(IPS, ESM) 연구개발 업무|
 | 2017.07 ~ 2017.08 | <a href="http://www.thinkware.co.kr/">Thinkware</a> | Software Developer (Intern) | 네이게이션 검색 성능 연구 |
 
 ## Project
