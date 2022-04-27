@@ -19,7 +19,7 @@ last_modified_at: 2022-04-27
 
 # Chaper 02. VIM
 
-### Section 01 ~ Section 02 vim 기본 
+### Section 01 ~ Section 03 vim 기본 
 
 * 이동
   * 단어 단위 이동 : **w, b**
@@ -57,3 +57,35 @@ last_modified_at: 2022-04-27
   * 마킹 정보 보기 : **:marks**
 * 쉘 명령어 이용하기
   * **:![명령어]**
+* 자동 완성
+  * **ctrl + p**
+  * **ctrl + n**
+
+  ### Section 04. ctags, cscope, 기타 플러그 인
+
+  * ctags 
+    * 프로그래밍 소스 코드 태그들의 데이터베이스(tags)를 생성하는 유닉스 명령입니다.
+    <pre>
+    ctags -R
+    </pre>
+    * vim에서 set 명령어로 tags 파일 경로를 설정할 수 있습니다.
+    <pre>
+    :set tags=./tags,/usr/tags
+    </pre>
+    * tj(tag jump) 명령어로 tags 파일에서 코드를 검색할 수 있습니다.
+    <pre>
+    :tj start_kernel
+    </pre>
+* cscope 
+  * 지역변수, 전역변수, 함수가 사용된 곳을 알 수 있는 소스 분석 프로그램입니다.
+  * **cscope.files** 에 파일 리스트를 만들고, **cscope -i cscope.files** 명령어로 **cscope.out**(cscope 심볼 데이터베이스)를 만듭니다.
+  * cs 명령어로 cscope를 사용할 수 있습니다.
+  <pre>
+  : cs find [질의 종류] [심볼]
+  : cs find s start_kernel  # Find this C Symbol
+  : cs find g start_kernel  # Find thid definition
+  : cs find d start_kernel  # Find functions called by this function
+  : cs find c start_kernel  # Find functions calling this function
+  </pre>
+* Plugin
+  * https://www.vim.org/scripts/index.php 에서 다운로드 받아 사용할 수 있습니다.
