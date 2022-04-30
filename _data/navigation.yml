@@ -32,6 +32,8 @@ docs:
         #url: /categories/algospot
       - title: "Utility"
         url: /categories/utility
+      - title: "OpenSource"
+        url: /categories/opensource
   - title: "DATA SCIENCE"
     children:
       - title: "Machine Learning"
