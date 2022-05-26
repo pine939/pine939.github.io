@@ -12,7 +12,7 @@ toc_sticky: true
 sidebar:
   nav: docs
 date: 2022-04-30
-last_modified_at: 2022-04-30
+last_modified_at: 2022-05-26
 ---
 
 ## 개요
@@ -24,3 +24,4 @@ last_modified_at: 2022-04-30
 
 * [가이드 문서](https://naver.github.io/OpenSourceGuide/book/)
 * [오픈 소스로 미래를 연마하라](https://book.naver.com/bookdb/book_detail.nhn?bid=15557456)
+* 매년 삼성전자에서 개최하는 오픈소스 컨퍼런스. [2021 soscon](https://www.soscon.net/)
