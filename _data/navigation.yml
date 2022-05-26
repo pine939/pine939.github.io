@@ -42,7 +42,7 @@ docs:
         url: /categories/ai
   - title: "TIL"
     children:
-      - title: "Today I Learn"
+      - title: "Today I Learned"
         url: /categories/til
   - title: "READ PAPER"
     children:
