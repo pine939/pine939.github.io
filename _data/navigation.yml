@@ -18,10 +18,12 @@ main:
     url: /tags/
 
 docs:
-  - title: "PROGRAMMING"
+  - title: "FUNDAMENTAL"
     children:
       - title: "C++"
         url: /categories/cpp
+      - title: "Utility"
+        url: /categories/utility
         #- title: "CODING TEST"
         #children:
         #- title: "Programmers"
@@ -30,12 +32,14 @@ docs:
         #url: /categories/baekjun
         #- title: "Algospot"
         #url: /categories/algospot
-      - title: "Utility"
-        url: /categories/utility
+  - title: "INTERESTED"
+    children:
+      - title: "ELK Stack"
+        url: /categories/elkstack
+      - title: "Dev Ops"
+        url: /categories/devops
       - title: "OpenSource"
         url: /categories/opensource
-  - title: "DATA SCIENCE"
-    children:
       - title: "Machine Learning"
         url: /categories/ml
       - title: "Artificial Intelligence"
@@ -44,7 +48,7 @@ docs:
     children:
       - title: "Today I Learned"
         url: /categories/til
-  - title: "READ PAPER"
+  - title: "PAPER"
     children:
       - title: "Domestic"
         url: /categories/domestic
