@@ -24,7 +24,8 @@ docs:
         url: /categories/cpp
       - title: "Utility"
         url: /categories/utility
-        #- title: "CODING TEST"
+      - title: "Algorithm"
+        url: /categories/algorithm
         #children:
         #- title: "Programmers"
         #url: /categories/programmers
