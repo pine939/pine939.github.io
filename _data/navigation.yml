@@ -24,7 +24,10 @@ docs:
         url: /categories/cpp
       - title: "Utility"
         url: /categories/utility
-        #- title: "CODING TEST"
+      - title: "Algorithm"
+        url: /categories/algorithm
+      - title: "Design"
+        url: /categories/design_pattern
         #children:
         #- title: "Programmers"
         #url: /categories/programmers
