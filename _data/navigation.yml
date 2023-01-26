@@ -22,6 +22,10 @@ docs:
     children:
       - title: "C++"
         url: /categories/cpp
+      - title: "TDD"
+        url: /categories/tdd
+      - title: "DB"
+        url: /categories/db
       - title: "Utility"
         url: /categories/utility
       - title: "Algorithm"
@@ -37,6 +41,8 @@ docs:
         #url: /categories/algospot
   - title: "INTERESTED"
     children:
+      - title: "Mobile"
+        url: /categories/mobile
       - title: "ELK Stack"
         url: /categories/elkstack
       - title: "Dev Ops"
